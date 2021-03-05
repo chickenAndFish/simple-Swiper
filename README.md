@@ -24,7 +24,7 @@
 |   `width`   |    `100vw`     | `string` | 填入任意尺寸字符串，`Swiper` 可视区域宽，默认为 `100vw`   |
 |  `height`   |    `100vh`     | `string` | `Swiper` 可视区域高，可填入任意尺寸字符串，默认为 `100vh` |
 | `threshold` |      `64`      | `number` | 滑动触发阈值，单位为 px ，默认为 `64`                     |
-|  itemIndex  |      `0`       | `number` | 默认页，默认为 `0` 即第一个 `SwiperItem`                  |
+| `itemIndex` |      `0`       | `number` | 默认页，默认为 `0` 即第一个 `SwiperItem`                  |
 
 ## 使用实例
 
