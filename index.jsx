@@ -38,7 +38,6 @@ function Swiper(props) {
   }, []);
 
   /* ---工具函数部分--- */
-
   /**
    * 触摸距离达到阈值时获取触摸移动方向, 默认阈值 64px
    * @param {number} start 触摸开始位置 startPoint
@@ -111,7 +110,7 @@ function Swiper(props) {
     }
   };
 
-  /* 事件处理函数部分 */
+  /* ---事件处理函数部分--- */
   /* 处理 'X', 'Y' 对应的触摸事件 */
   const touchStartX = e => {
     const point = e.changedTouches[0].clientX;
@@ -183,7 +182,7 @@ function Swiper(props) {
     if (direction === 'Y') touchEndY(e);
   };
 
-  /* 组件渲染部分 */
+  /* ---组件渲染部分--- */
 
   return (
     <div
@@ -227,21 +226,21 @@ ReactDOM.render(
         <div>
           I'm the first page.
           <br />
-          试试上下左右滑动
+          试试左右滑动
         </div>
       </SwiperItem>
       <SwiperItem>
         <div>
           I'm the second page.
           <br />
-          试试上下左右滑动
+          试试左右滑动
         </div>
       </SwiperItem>
       <SwiperItem>
         <div>
           I'm the third page.
           <br />
-          试试上下左右滑动
+          试试左右滑动
         </div>
       </SwiperItem>
     </Swiper>
