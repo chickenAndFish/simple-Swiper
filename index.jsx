@@ -37,6 +37,12 @@ function Swiper(props) {
     setIsMoving(true); // 手动触发，使页面默认偏移
   }, []);
 
+  // 每次触摸结束偏移完页面后即执行，暴露了滑动后的当前页 currentIndex 与设置当前页函数 setCurrentIndex
+  useEffect(() => {
+    const callBack = props.changed;
+    callBack({ currentIndex, setCurrentIndex });
+  }, [endPoint]);
+
   /* ---工具函数部分--- */
   /**
    * 触摸距离达到阈值时获取触摸移动方向, 默认阈值 64px
@@ -220,6 +226,9 @@ ReactDOM.render(
       height='100vh'
       threshold={64}
       itemIndex={0}
+      changed={e => {
+        console.log(e);
+      }}
     >
       <SwiperItem>
         <div>
