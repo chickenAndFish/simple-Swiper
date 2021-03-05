@@ -6,7 +6,7 @@
 
 将项目内的 index.jsx 文件稍作改动即可模块化使用
 
-可转移部分 styel 样式至 CSS 文件, 不转不影响直接使用 index.jsx 文件模块化
+可转移部分 style 样式至 CSS 文件, 不转不影响直接使用 index.jsx 文件模块化
 
 ## 组件组成
 

@@ -1,6 +1,6 @@
 /**
  * 基于 Reach Hook 及 CSS 属性 transform: translate(); 的简易 Swiper(仅适用于移动端, 若用于 PC 端请作修改)
- * 本 jsx 文件稍作改动即可模块化使用, 可转移部分 styel 样式至 CSS 文件, 不转不影响直接使用此 jsx 文件模块化
+ * 本 jsx 文件稍作改动即可模块化使用, 可转移部分 style 样式至 CSS 文件, 不转不影响直接使用此 jsx 文件模块化
  */
 
 const { useState, useEffect, useRef } = React;
