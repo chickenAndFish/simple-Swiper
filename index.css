@@ -1,0 +1,37 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 容器 */
+.Swiper-container {
+}
+
+/* 包装 */
+.Swiper-wrapper {
+}
+
+/* 子项 */
+.Swiper-item {
+}
+
+/* 方便演示，以下部分可删 */
+.Swiper-item {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.Swiper-item:nth-child(1) {
+  background-color: skyblue;
+}
+.Swiper-item:nth-child(2) {
+  background-color: pink;
+}
+.Swiper-item:nth-child(3) {
+  background-color: yellowgreen;
+}

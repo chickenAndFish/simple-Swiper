@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="./react/react.min.js"></script>
+    <script src="./react/reactDOM.min.js"></script>
+    <script src="./react/babel.min.js"></script>
+    <title>simple Swiper</title>
+  </head>
+  <body>
+    <script>
+      if (
+        !!navigator.userAgent.match(
+          /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+        )
+      ) {
+        document.body.innerHTML = '<div id="root"></div>';
+      } else {
+        document.body.innerHTML = `<div style="margin-top: 200px; text-align: center; fontSize: 32px;">请调整页面为移动端并刷新</div>`;
+      }
+    </script>
+    <script type="text/babel" src="index.jsx"></script>
+  </body>
+</html>
