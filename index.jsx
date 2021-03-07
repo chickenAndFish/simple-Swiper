@@ -119,7 +119,7 @@ function Swiper(props) {
   /* ---事件处理函数部分--- */
   /* 处理 'X', 'Y' 对应的触摸事件 */
   const touchStartX = e => {
-    const point = e.changedTouches[0].clientX;
+    const point = e.targetTouches[0].clientX;
     setIsMoving(true);
     setStartPoint(point);
     setCurrentElSize({
@@ -129,7 +129,7 @@ function Swiper(props) {
     return;
   };
   const touchStartY = e => {
-    const point = e.changedTouches[0].clientY;
+    const point = e.targetTouches[0].clientY;
     setIsMoving(true);
     setStartPoint(point);
     setCurrentElSize({
@@ -139,14 +139,14 @@ function Swiper(props) {
     return;
   };
   const touchMoveX = e => {
-    const point = e.changedTouches[0].clientX;
+    const point = e.targetTouches[0].clientX;
     const distan = translatePart(point - startPoint);
     setMovePoint(point);
     setDistance(distan);
     return;
   };
   const touchMoveY = e => {
-    const point = e.changedTouches[0].clientY;
+    const point = e.targetTouches[0].clientY;
     const distan = translatePart(point - startPoint);
     setMovePoint(point);
     setDistance(distan);
