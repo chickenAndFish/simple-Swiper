@@ -39,7 +39,7 @@ function Swiper(props) {
 
   // 每次触摸结束偏移完页面后即执行，暴露了滑动后的当前页 currentIndex 与设置当前页函数 setCurrentIndex
   useEffect(() => {
-    const callBack = props.changed;
+    const callBack = props.changed || function () {};
     callBack({ currentIndex, setCurrentIndex });
   }, [endPoint]);
 
