@@ -26,6 +26,7 @@
 | `threshold` |      `64`      |  `number`  | 滑动触发阈值，单位为 px ，默认为 `64`                                                                                     |
 | `itemIndex` |      `0`       |  `number`  | 默认页，默认为 `0` 即第一个 `SwiperItem`                                                                                  |
 |  `changed`  |    `()=>{}`    | `function` | 回调函数 `changed` 每次触摸结束偏移完页面后即执行，暴露了滑动后的当前页 `currentIndex` 与设置当前页函数 `setCurrentIndex` |
+| `isFoaming` |    `false`     | `boolean`  | 是否冒泡, `true` 为冒泡, 会触发上层组件的触摸事件, `false` 为不冒泡, 为默认值, 不会触发上层触摸事件                       |
 
 ## 使用实例
 
@@ -37,6 +38,7 @@
   height='100vh'
   threshold={64}
   itemIndex={0}
+  isFoaming={false}
   changed={e => {
     console.log(e);
   }}

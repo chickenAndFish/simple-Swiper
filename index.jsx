@@ -171,19 +171,22 @@ function Swiper(props) {
 
   // 触摸开始时触发事件
   const onTouchStart = e => {
-    e.stopPropagation();
+    const isFoaming = props.isFoaming || false;
+    if (!isFoaming) e.stopPropagation();
     if (direction === 'X') touchStartX(e);
     if (direction === 'Y') touchStartY(e);
   };
   // 触摸移动时触发事件
   const onTouchMove = e => {
-    e.stopPropagation();
+    const isFoaming = props.isFoaming || false;
+    if (!isFoaming) e.stopPropagation();
     if (direction === 'X') touchMoveX(e);
     if (direction === 'Y') touchMoveY(e);
   };
   // 触摸结束时触发事件
   const onTouchEnd = e => {
-    e.stopPropagation();
+    const isFoaming = props.isFoaming || false;
+    if (!isFoaming) e.stopPropagation();
     if (direction === 'X') touchEndX(e);
     if (direction === 'Y') touchEndY(e);
   };
@@ -226,6 +229,7 @@ ReactDOM.render(
       height='100vh'
       threshold={64}
       itemIndex={0}
+      isFoaming={false}
       changed={e => {
         console.log(e);
       }}
