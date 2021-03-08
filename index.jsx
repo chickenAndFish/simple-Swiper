@@ -17,7 +17,7 @@ function SwiperItem(props) {
 /* 组件主体项 */
 function Swiper(props) {
   /* ---初始数据部分--- */
-  const direction = props.direction || 'X';
+  const direction = props.direction.toUpperCase() || 'X';
   const itemIndex = props.itemIndex || 0;
   const width = props.width || '100vw';
   const height = props.height || '100vh';
